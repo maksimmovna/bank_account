@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+    height: 100px;
+    display: grid;
+    grid-template-columns: 5% auto 5%;
+    grid-template-rows: 30px 30px min-content;
+    grid-template-areas:". . ."
+                        ". h1 ."
+                        ". user-info .";
+}
+
+h1 {
+    grid-area: h1;
+}
+
+.user-info {
+    grid-area: user-info;
+}
+
+.main-navigation {
+    display: grid;
+    grid-template-columns: 5% auto 5%;
+    grid-template-areas:". ul .";
+    background-color: #ec98de;
+}
+
+.nav-button {
+    display: flex;
+    align-items: center;
+    cursor: default;    
+    width: 200px;
+    height: 100%;
+    background-color: #bd71a6;
+}
+
+.nav-button:hover {
+    background-color: #d39bc6;
+    color: white;
+}
+
+.nav-button:active {
+    background-color: #c76eb8;
+    color: white;
+}
+
+.ul-nav {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 50px;
+    font-size: 16pt;
+    grid-area: ul;
+}
+
+.small-text {
+    display: flex;
+    align-items: flex-end;    
+}
+
+
+.btn-ok {
+    justify-self: center;
+    width: 50px;
+    grid-area: btn-ok;
+}
+
+.section-listDeposit {
+    display: grid;
+    grid-template-columns: 5% auto 5%;
+    grid-template-rows: 50px auto;
+    grid-template-areas:". h2-listDeposit ."
+                        ". form-listDeposit .";
+    font-size: 15pt;
+    width: 100%;
+    height: 400px;
+    background-color: #f7e1f7;
+}
+
+.form-listDeposit {
+    grid-area: form-listDeposit;
+}
+
+.h2-listDeposit {
+    font-size: 20pt;
+    padding-top: 15px;
+    grid-area: h2-listDeposit;
+}
+
+td {
+    margin-top: 15px;
+    height: 70px;
+}
+
+th {
+    text-align: left;
+}
+
+.table-listDeposit {
+    width: 40%;
+    border-collapse: collapse;
+}
+
+.btn-listDeposit {
+    color: white;
+    padding: 5px;
+    background-color: #eca7d7;
+    border: 1px solid rgb(233, 188, 103);
+    border-radius: 6px;
+}
+
+.btn-listDeposit:hover {
+    background-color: #c22fa9;
+}
+
+.btn-listDeposit:active {
+    background-color: #af316c;
+}
+
+.tr1 {
+    background-color: #cf689f;
+}
+
+.tr2 {
+    background-color: #cf628c;
+}
+.tr3 {
+    background-color: #cf6889f;
+}
+.section-registration {
+    margin-top: 30px;    
+}
+
+.section-openDeposit {
+    margin-top: 30px;
+}
+
+.form-openDeposit {
+    width: 300px;
+    height: 200px;
+    background-color: #e46d6d;
+    display: grid;
+    justify-self: center;
+    grid-auto-columns: 5px auto 5px;
+    grid-auto-rows: 30px 30px 30px 30px 10px 20px;
+    grid-template-areas:". summa ."
+                        ". summa-field ."
+                        ". date ."
+                        ". date-field ."
+                        ". . ."
+                        ". btn-ok .";
+}
+
+.summa {
+    grid-area: summa;
+}
+
+.summa-field {
+    grid-area: summa-field;
+}
+
+.date {
+    grid-area: date;
+}
+
+.date-field {
+    grid-area: date-field;
+}
